@@ -1,0 +1,113 @@
+JFDML JFormDesigner: "8.3" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.GridBagLayout ) {
+			"$columnSpecs": "0:1.0"
+			"$rowSpecs": "0:1.0, 0"
+			"$alignTop": true
+			"$alignLeft": true
+		} ) {
+			name: "this"
+			"title": "学生管理系统"
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "table"
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+				"$columnSpecs": "0, 0, 0"
+				"$rowSpecs": "0"
+				"$hGap": 5
+				"$vGap": 5
+				"$alignLeft": true
+				"$alignTop": true
+			} ) {
+				name: "panel1"
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnDelete"
+					"text": "删除"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnAdd"
+					"text": "添加"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 1
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnEdit"
+					"text": "修改"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 2
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridy": 1
+				"hAlign": 0
+			} )
+			menuBar: new FormContainer( "javax.swing.JMenuBar", new FormLayoutManager( class javax.swing.JMenuBar ) ) {
+				name: "menuBar1"
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menuManage"
+					"text": "学生信息管理"
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuManageDelete"
+						"text": "删除"
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuManageAdd"
+						"text": "添加"
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuManageEdit"
+						"text": "修改"
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menuQuery"
+					"text": "学生信息查询"
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuQueryAll"
+						"text": "查询全部"
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuQueryByID"
+						"text": "按学号查询"
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuQueryByName"
+						"text": "按姓名查询"
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuQueryByScore"
+						"text": "按分数查询"
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menuSettings"
+					"text": "系统设置"
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuSettingsChangePassword"
+						"text": "修改当前管理员密码"
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menuTools"
+					"text": "小工具"
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuToolCalc"
+						"text": "计算器"
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuToolEditor"
+						"text": "文本编辑器"
+					} )
+				} )
+			}
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 400, 300 )
+		} )
+	}
+}
