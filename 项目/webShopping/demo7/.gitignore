@@ -1,0 +1,42 @@
+# Build output
+target/
+*.class
+*.war
+*.ear
+*.jar
+
+# Packaged submission artifacts
+submission_build/
+webShopping-demo7-submit.zip
+*.zip
+*.rar
+*.7z
+
+# Database exports and local data
+*.bak
+*.mdf
+*.ldf
+*.db
+*.sqlite
+*.sqlite3
+
+# Runtime logs and temporary files
+*.log
+logs/
+temp_*.html
+*.tmp
+*.temp
+
+# Local secrets and environment files
+.env
+*.env
+!.env.example
+
+# IDE and OS files
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+desktop.ini
+
